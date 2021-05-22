@@ -1,0 +1,35 @@
+.side-bar-chats {
+  /* flex: 1;
+  background-color: white;
+  overflow: scroll;
+  flex-direction: column;
+  width: 30%; */
+  margin-top: 50px;
+  width: 40%;
+  flex-grow: 1;
+  max-width: 400;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* marginTop: 50,
+flexGrow: 1,
+maxWidth: 350,
+marginLeft: "auto",
+marginRight: "auto", */
+
+.side-bar-chat {
+  width: 50%;
+  flex-grow: 1;
+  max-width: 400;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.side-bar-chat:hover {
+  background-color: #ebebeb;
+}

@@ -1,0 +1,9 @@
+
+
+POST  http://localhost:3001/get-users
+Content-Type: application/json
+
+{
+    "screen_name":"elonmusk,dan_abramov,TwitterDev,michael_saylor"
+}
+
