@@ -29,9 +29,11 @@ let client = new Twitter({
 });
 
 app.get("/", (req, res) => res.send("Server is running"));
+// Get users data and store it in database
 app.post("/get-users", (req, res) => {
   getUsers.handleGetUsers(req, res, client, psqlDB);
 });
+// Get specific user data from database
 app.get("/get-specsific-user/:username", (req, res) => {
   getUserData.handleGetUserData(req, res, psqlDB);
 });

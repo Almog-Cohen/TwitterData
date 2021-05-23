@@ -1,4 +1,4 @@
-// Get specific user data
+// Get specific user data from the database
 const handleGetUserData = async (req, res, psqlDB) => {
   const { username } = req.params;
   try {

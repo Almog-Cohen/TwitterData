@@ -6,6 +6,9 @@ const handleGetUsers = async (req, res, client, psqlDB) => {
     const users = req.body;
     const usersData = await client.get("users/lookup", users);
 
+    // Can add a function that check if the user alredy exists in the database
+    // If the user exists do the same tasks just instead insert method i can use update method
+
     const initalDb = await insertTasksToDb(
       psqlDB,
       users.screen_name.split(",")
